@@ -3,7 +3,7 @@
 /* universal */
 
 body { 
-  padding-top: 100px; 
+  padding-top: 150px; 
 }
 section { 
   overflow: auto;
@@ -51,6 +51,7 @@ margin-top: 45px;
 padding-top: 5px;
 border-top: 1px solid #eaeaea; 
 color: #777;
+
 }
 footer a { 
   color: #555;
@@ -69,9 +70,10 @@ footer ul {
   }
 
 footer ul li { 
-  float: left; margin-left: 15px;
+  float: left; margin-left:150px;
   }
   
+
   @mixin box_sizing {
   -moz-box-sizing:    border-box;
   -webkit-box-sizing: border-box;
