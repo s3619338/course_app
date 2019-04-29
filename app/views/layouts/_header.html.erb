@@ -10,8 +10,7 @@
       <span class="glyphicon glyphicon-screenshot"></span> Category<span class="caret"></span>
     </button>
     
-      <% if logged_in? %>
-     <li><%= link_to "Users", '#' %></li>
+     
      
      
     <ul class="dropdown-menu" role="menu">
@@ -28,8 +27,9 @@
             <a href="#">iOS Engineering</a>
         </li>
     </ul>
-</div>
+   </div>
     <div class="btn-group">
+    
     <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
      <span class='glyphicon glyphicon-new-window'></span> Locations<span class="caret"></span>
     </button>
@@ -44,19 +44,21 @@
             <a href="#">14.10.30</a>
         </li>
     </ul>
-</div>
-<button type="button" class="btn btn-info">
+    </div>
+  <button type="button" class="btn btn-info">
+   <% if logged_in? %>
+     <li><%= link_to "Users", '#' %></li>  
      <li><%= link_to "Profile", current_user %></li>
-              <li><%= link_to "Settings", '#' %></li>
+     <li><%= link_to "Settings", '#' %></li>
     <%= link_to "Log out", logout_path, method: :delete %>
     
-  <span class="glyphicon glyphicon-user"></span> Log in</button>
-    </ul>
+     <span class="glyphicon glyphicon-user"></span> 
+ 
     
      <% else %>
           <li><%= link_to "Log in", login_path %></li>
         <% end %>
-    
+    </ul>
     </nav> 
     </div> 
     </header> 
